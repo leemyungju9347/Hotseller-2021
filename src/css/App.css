@@ -1,0 +1,238 @@
+.App {
+    background-color: #fff;
+    border-radius: 20px;
+    padding:50px;
+    width: 85%;
+    margin: 0 auto;
+    /* box-shadow:5px 5px 8px #bdbdbda3; */
+}
+
+header {
+    padding: 0 15px;
+}
+
+header > h1 {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    font-size: 4em;
+}
+
+header > h1::before {
+    content: '';
+    background-color: #83ffc2;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    left: -23px;
+    top: 0;
+
+}
+header > span {
+    color: #848484;  
+}
+
+header > ul {
+    margin-top:70px;
+    font-family: 'GongGothicMedium';
+}
+
+header > ul > li {
+    display: inline-block;
+    
+}
+
+header > ul > li.on {
+    background: linear-gradient(#fff 50%,#83ffc2 50%);
+}
+
+header > ul > li > a {
+    color: #000;
+    font-size: 1.5em;
+}
+
+header > ul > li > a > span {
+    margin-right: 5px;
+}
+
+header > ul > li + li {
+    margin-left:20px;
+}
+
+
+.main {
+    margin-top:30px;
+    padding-top: 30px;
+    border-top: 1px solid #eaeaea;
+    padding:30px 20px 0 20px;
+    position: relative;
+}
+
+/* ----------------- selectBox ------------------------ */
+.selectBox {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.selectBox > .selectList {
+    display: inline-block;
+    margin-left:40px;
+}
+
+.selectBox > .selectList > div {
+    display: inline-block;
+}
+
+.selectBox > .selectList > div + div {
+    margin-left:35px;
+}
+
+.selectBox > .selectList > div > input[type="radio"] {
+    display: none;
+}
+
+.selectBox > .selectList > div > input[type="radio"] + label {
+    cursor: pointer;
+}
+
+.selectBox > .selectList > div > input[type="radio"]:checked + label {
+    
+}
+
+.selectBox > .selectList > div > input[type="radio"] + label > span {
+    position: relative;
+}
+
+.selectBox > .selectList > div > input[type="radio"]:checked + label > span {
+    border-bottom:3px solid #83ffc2;
+    
+}
+
+.selectBox > .selectList > div > input[type="radio"] + label > span::before {
+    content: '';
+    border: 2px dotted black;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+
+}
+
+.selectBox > .selectList > div > input[type="radio"] + label > span > i {
+    display: none;
+    position: absolute;
+    left: -22px;
+    top: 0;
+    color: #83ffc2;
+}
+
+.selectBox > .selectList > div > input[type="radio"]:checked + label > span > i {
+    display: block;
+    
+}
+
+
+/* ----------------- Trend ------------------------ */
+.hashListWrap {
+    margin-top:70px;
+    text-align: center;
+}
+
+.hashListWrap  > .hashList > .hashItem + .hashItem {
+    margin-top:50px;
+}
+
+.hashListWrap > .hashList > .hashItem > .hashDay {
+    font-size:1.5em;
+    position: relative;
+    background: linear-gradient(#fff 50%,#83ffc2 50%);
+    font-family: 'GongGothicMedium';
+    padding: 0 10px;
+}
+
+.hashListWrap > .hashList > .hashItem > .hashDay > i {
+    margin-right: 10px;
+}
+
+.hashListWrap > .hashList > .hashItem > ul {
+    margin-top: 50px;
+    width: 80%;
+    margin: 50px auto 0;
+}
+
+.hashListWrap > .hashList > .hashItem > ul::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.hashListWrap > .hashList > .hashItem > ul > li {
+    width: calc(33.333333% - 40px);
+    float: left;
+    background-color: #f7f7f7;
+    margin:20px 15px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #c2c2c273;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 0.3s ease;
+}
+
+
+.hashListWrap > .hashList > .hashItem > ul > li:hover {
+    transform: translateY(-10px);
+}
+
+.hashListWrap > .hashList > .hashItem > ul > li > a {
+    display: block;
+    padding:50px 20px;
+    transition: 0.3s ease;
+}
+
+.hashListWrap > .hashList > .hashItem > ul > li:hover > a {
+    color: #83ffc2;
+}
+
+/* ----------------- Recent ------------------------ */
+.recentHash {
+}
+
+.recentHash > .RecentInfoList {
+    margin-top:50px;
+    text-align: center;
+}
+
+.recentHash > .RecentInfoList > .hashList {
+    margin-top: 50px;
+    width: 80%;
+    margin: 50px auto 0;
+}
+
+.recentHash > .RecentInfoList > .hashList::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.recentHash > .RecentInfoList > .hashList > .hashItem {
+    float: left;
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    padding: 50px 20px;
+    width: calc(33.333333% - 40px);
+    margin: 20px;
+    box-shadow: 5px 5px 10px #c2c2c273;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 0.3s ease;
+}
+
+.recentHash > .RecentInfoList > .hashList > .hashItem:hover {
+    transform: translateY(-10px);
+    color: #83ffc2;
+}
+
+
