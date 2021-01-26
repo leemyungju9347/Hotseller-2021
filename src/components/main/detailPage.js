@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import {Link} from 'react-router-dom'
 
-class detailPage extends Component {
+class DetailPage extends Component {
     componentDidMount() {
         const {location,history} = this.props;
 
@@ -44,4 +44,4 @@ class detailPage extends Component {
     }
 }
 
-export default detailPage;
+export default DetailPage;

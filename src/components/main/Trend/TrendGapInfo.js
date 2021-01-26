@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 
 class TrendGapInfo extends Component {
     static defaultProps = {
@@ -10,7 +11,8 @@ class TrendGapInfo extends Component {
 
     state = {
         position:'trend'
-    }
+    } 
+
 
     render() {
         const {day1, day7, day30} = this.props;
@@ -29,8 +31,9 @@ class TrendGapInfo extends Component {
                                     <Link to={{
                                         pathname:`/detail/${data.hashtag}`,
                                         state:{
-                                            data,
+                                            hashname:data.hashtag,
                                             position,
+                                            day:1
                                         }
                                     }}>
                                         <strong># { data.hashtag }</strong>
@@ -49,8 +52,9 @@ class TrendGapInfo extends Component {
                                     <Link to={{
                                         pathname:`/detail/${data.hashtag}`,
                                         state:{
-                                            data,
-                                            position
+                                            hashname:data.hashtag,
+                                            position,
+                                            day:7
                                         }
                                     }}>
                                         <strong># { data.hashtag }</strong>
@@ -69,8 +73,9 @@ class TrendGapInfo extends Component {
                                     <Link to={{
                                         pathname:`/detail/${data.hashtag}`,
                                         state:{
-                                            data,
-                                            position
+                                            hashname:data.hashtag,
+                                            position,
+                                            day:30
                                         }
                                     }}>
                                         <strong># { data.hashtag }</strong>

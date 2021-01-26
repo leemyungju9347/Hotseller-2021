@@ -27,8 +27,9 @@ class TrendRateInfo extends Component {
                                     <Link to={{
                                         pathname:`/detail/${data.hashtag}`,
                                         state:{
-                                            data,
-                                            position
+                                            hashname:data.hashtag,
+                                            position,
+                                            day:1
                                         }
                                     }}>
                                         <strong># { data.hashtag }</strong>
@@ -47,8 +48,9 @@ class TrendRateInfo extends Component {
                                     <Link to={{
                                         pathname:`/detail/${data.hashtag}`,
                                         state:{
-                                            data,
-                                            position
+                                            hashname:data.hashtag,
+                                            position,
+                                            day:7
                                         }
                                     }}>
                                         <strong># { data.hashtag }</strong>
@@ -67,8 +69,9 @@ class TrendRateInfo extends Component {
                                     <Link to={{
                                         pathname:`/detail/${data.hashtag}`,
                                         state:{
-                                            data,
-                                            position
+                                            hashname:data.hashtag,
+                                            position,
+                                            day:7
                                         }
                                     }}>
                                         <strong># { data.hashtag }</strong>

@@ -17,7 +17,6 @@ class Header extends Component {
     }
 
     componentDidMount() {
-        console.log('여기는 헤더의 컴포넌트디드입니다!! 🚀',this.props);
         const location = window.location.hash;
 
         if( location === '#/main' ||  location === '#/' ) {
@@ -34,7 +33,6 @@ class Header extends Component {
 
 
     render() {
-        console.log('여기는 헤더의 렌더입니다!! 😙',this.props);
         return (
             <header>
                 <h1>Hashtag</h1>

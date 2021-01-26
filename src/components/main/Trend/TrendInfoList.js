@@ -8,8 +8,11 @@ class TrendList extends Component {
         selected:'',
     }
 
+    
+
     render() {
         const {hashData,selected} = this.props;
+ 
         return (
             <div className="trendInfoList hashListWrap">
                 {

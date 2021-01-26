@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Header from './components/common/Header';
 import { HashRouter, Route } from 'react-router-dom';
-import Recent from './components/main/Recent/Recent';
-import HashTrend from './components/main/Trend/HashTrend';
-import detailPage from './components/main/detailPage';
+import Recent from './components/routes/Recent';
+import HashTrend from './components/routes/HashTrend';
+import DetailPage from './components/routes/DetailPage';
 import './css/App.css';
 import './css/reset.css';
 
@@ -17,14 +17,13 @@ class App extends Component {
     }
 
     getCurrentRouter = (location) => {
-        console.log('앱에서 로케이션 확인',location);
         this.setState({
             currentLocation : location
         })
+
     }
 
     render() {
-        console.log('APP',this);
         const {currentLocation} = this.state
         return (
             <div className="App">
@@ -34,7 +33,7 @@ class App extends Component {
                         <Route path="/" exact={true} render={ props => <HashTrend onUpdate={this.getCurrentRouter} {...props} />} />
                         <Route path="/main" render={ props => <HashTrend onUpdate={this.getCurrentRouter} {...props} />} />
                         <Route path="/recent" component={Recent}/>   
-                        <Route path="/detail/:id" component={detailPage}/>
+                        <Route path="/detail/:id" component={DetailPage}/>
                     </div>
                 </HashRouter>
             </div>

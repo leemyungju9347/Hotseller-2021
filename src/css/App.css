@@ -221,7 +221,6 @@ header > ul > li + li {
     float: left;
     background-color: #f7f7f7;
     border-radius: 30px;
-    padding: 50px 20px;
     width: calc(33.333333% - 40px);
     margin: 20px;
     box-shadow: 5px 5px 10px #c2c2c273;
@@ -235,4 +234,104 @@ header > ul > li + li {
     color: #83ffc2;
 }
 
+.recentHash > .RecentInfoList > .hashList > .hashItem > a {
+    padding: 50px 20px;
+    display: block;
 
+}
+
+/* --------- PageNotFound -------------- */
+.pageNotFound {
+    height: 60vh;
+    font-size:1.5em;
+}
+
+
+/* --------- Detail-recent -------------- */
+.detailHash {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.detailHash > .todayDate {
+    color: #9f9f9f;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.detailHash > .todayDate > i {
+    margin-right: 10px;
+}
+
+.detailHash > .d-hashtag {
+    font-size:2.5em;
+    font-family: 'GongGothicMedium';
+    background: linear-gradient(#fff 50%,#83ffc2 50%);
+    display: inline-block;
+    margin-top:70px;
+}
+
+.detailHash > .hashListTitle {
+    background-color: #e5e5e5;
+    position: relative;
+    padding: 0 5px;
+    margin-top:90px;
+    display: inline-block;
+    font-size:1.5em;
+}
+
+.detailHash  > .hashListTitle::before {
+    content: '';
+    background-color: #83ffc2;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: -31px;
+    top: 6px;
+}
+
+.detailHash > .hashDetailList {
+    padding:30px 10px 20px;
+}
+
+.detailHash > .hashDetailList::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.detailHash > .hashDetailList > li {
+    width: 50%;
+    float: left;
+}
+
+.detailHash > .hashDetailList > li > span {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.detailHash > .hashDetailList > li + li {
+    margin-top:10px;
+}
+
+.detailHash > .hashDetailList > li > i {
+    font-style: normal;
+    color: #848484;
+}
+
+
+.detailHash > .hashDetailList > li > span {
+    margin-top: 20px;
+    display: block;
+}
+
+.hashDetailList.popular > li > b {
+    font-size: 1.3em;
+}
+
+.hashDetailList.popular > li > span {
+    font-size:0.9em;
+}
