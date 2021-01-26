@@ -1,11 +1,11 @@
 # Hotseller
 
 ## 💻 프로젝트 실행 방법
-- git clone
+1. 저장소 주소를 복사한뒤 git bash 명령어 창이나, vscode 터미널을 열어서 원하는 폴더위치에 다음과 같은 명령어를 입력해주세요. 
 ```bash
 $ git clone <repository 주소>
 ```
-프로젝트 url 복사 후 clone
+2. 다음 순서대로 vscode터미널 창에 입력해주세요.
 - 실행 방법
 ```bash
  - node module install  
@@ -17,6 +17,7 @@ $ git clone <repository 주소>
  - build
  $ npm run build
  ```
+ 
 ## 🛠 프로젝트 버전
 - npm 버전
 ```bash
