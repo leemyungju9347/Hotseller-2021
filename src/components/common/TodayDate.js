@@ -1,5 +1,6 @@
 import React, { Component,Fragment } from 'react';
 
+// 오늘의 날짜 컴포넌트
 class TodayDate extends Component {
 
     todayDateFomat = () => {

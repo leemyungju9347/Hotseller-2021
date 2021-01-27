@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import TodayDate from '../../common/TodayDate';
 
+// 해시태그의 자세한 정보에 대한 데이터
 class DetailInfoList extends Component {
     static defaultProps = {
-        detailData : {},
         day:0,
         hashInfoData:{}
     }
 
     render() {
         const { hashInfoData } = this.props;
-
-        // console.log('🐱‍🚀',hashInfoData.info.hashtag);
 
         if( hashInfoData && hashInfoData.info ) {
             return (
@@ -61,15 +59,6 @@ class DetailInfoList extends Component {
                                         {list.like_cnt}
                                     </span>
                                     <i>포스팅 : {list.id_data.post_cnt}</i>
-                                    {/* {
-                                        list.id_data.recent_hashtag_list.map((data,index) =>{
-                                            if( data ) {
-                                                return <li key={index}># {data.hashtag}</li>
-                                            }
-
-                                            return null
-                                        })
-                                    } */}
                                 </li>)
                                 
                             })
@@ -77,6 +66,8 @@ class DetailInfoList extends Component {
                     </ul>
                 </div>
             )
+            
+        // 데이터를 받아오는 중
         }else {
             return <div>Loading...</div>
         }

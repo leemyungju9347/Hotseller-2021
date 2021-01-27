@@ -7,6 +7,7 @@
     /* box-shadow:5px 5px 8px #bdbdbda3; */
 }
 
+/* ------------- header --------------------- */
 header {
     padding: 0 15px;
 }
@@ -60,6 +61,7 @@ header > ul > li + li {
     margin-left:20px;
 }
 
+/* ----------------- main ------------------------ */
 
 .main {
     margin-top:30px;
@@ -247,7 +249,7 @@ header > ul > li + li {
 }
 
 
-/* --------- Detail-recent -------------- */
+/* --------- Detail -------------- */
 .detailHash {
     position: relative;
     text-align: center;

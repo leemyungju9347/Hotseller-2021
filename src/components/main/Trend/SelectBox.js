@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// 증가량 / 증가율 선택하는 체크박스 컴포넌트
 class SelectBox extends Component {
     input = React.createRef();
 
@@ -18,6 +19,8 @@ class SelectBox extends Component {
 
     componentDidMount() {
         const inputElm = document.querySelectorAll('input');
+        
+        // 체크박스 초기화
         for(let i = 0; i < inputElm.length; i++){
             if( inputElm[i].value === this.props.selected ) {
                 inputElm[i].checked = true
@@ -25,7 +28,7 @@ class SelectBox extends Component {
         }
     }
 
-
+    // 체크박스 클릭
     selectClick = (e) => {
 
         if( e.target.tagName !== 'SPAN' ) return;

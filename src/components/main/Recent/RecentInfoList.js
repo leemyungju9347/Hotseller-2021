@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+// 최근 새로운분석 컴포넌트
 class RecentInfoList extends Component {
     static defaultProps = {
         hashData:[],
     }
 
-    state = {
-        position:'recent'
-    }
-
     render() {
         const { hashData } = this.props; 
-        const { position } = this.state
         
         return (
             <div className="RecentInfoList">
@@ -23,13 +19,11 @@ class RecentInfoList extends Component {
                                 <Link to={{
                                     pathname:`/detail/${data.hashtag}`,
                                     state:{
-                                        hashname:data.hashtag,
-                                        position
+                                        hashname:data.hashtag
                                     }
                                 }}>
                                     <strong># {data.hashtag}</strong>
                                 </Link>
-                                
                             </div>
                         )
                     }) }
